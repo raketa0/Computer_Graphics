@@ -1,32 +1,108 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
+# ────────────────────────────────────────────────────────────────
+# Общие игноры для C/C++ проектов
+# ────────────────────────────────────────────────────────────────
+# Временные файлы компиляции
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
+*.i
+*.ii
+*.d
+*.tds
 *.pch
-
-# Compiled Dynamic libraries
+*.pdb
+*.idb
+*.ilk
+*.exp
+*.lib     # ← статические библиотеки (кроме ваших собственных, если нужно)
+*.dll
 *.so
 *.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
 *.out
 *.app
+
+# Папки сборки
+build/
+Build/
+build-*/
+out/
+bin/
+Bin/
+Debug/
+Release/
+x64/
+x86/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+CMakeLists.txt.user
+Makefile
+*.cmake
+*.dir/
+*.vcxproj.user
+*.sln.docstates
+*.opensdf
+*.sdf
+*.user
+*.suo
+*.aps
+.ipch/
+*.vs/
+.vs/
+.vscode/
+.idea/
+*.code-workspace
+
+# SFML-специфичные (если вы кладёте SFML в проект — обычно не нужно)
+SFML/
+sfml/
+SFML-*/
+extern/SFML/
+lib/SFML/
+include/SFML/
+
+# Ресурсы игры (если не хотите коммитить все текстуры/шрифты — раскомментируйте)
+# assets/
+# resources/
+# fonts/
+# images/
+# sounds/
+# *png
+# *jpg
+# *ttf
+# *wav
+# *ogg
+
+# Логи, кэш и мусор
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+Thumbs.db
+.DS_Store
+desktop.ini
+.gitattributes  # ← если используете Git LFS — оставьте, иначе можно игнорировать
+
+# Visual Studio / MSBuild
+*.vcxproj.*
+*.sln
+*.suo
+*.user
+*.psess
+*.vsp
+*.vspx
+*.coverage
+*.coveragexml
+
+# CMake
+CMakeLists.txt.user
+CMakeUserPresets.json
+CMakePresets.json
+
+# Дополнительно для SFML + CMake + VS Code
+compile_commands.json
+.ccls-cache/
+.cache/
+build.ninja
+rules.ninja
