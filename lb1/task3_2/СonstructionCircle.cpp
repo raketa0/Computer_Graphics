@@ -37,6 +37,13 @@ void ConstructionCircle::Draw(sf::RenderWindow& window)
 
 void ConstructionCircle::DrawPoint(sf::RenderWindow& window, sf::Vector2i pos)
 {
+
+	if (pos.x < 0 || pos.x >= static_cast<int>(window.getSize().x) ||
+		pos.y < 0 || pos.y >= static_cast<int>(window.getSize().y))
+	{
+		return;
+	}
+
 	sf::Vertex point;
 	point.position = sf::Vector2f(static_cast<float>(pos.x), static_cast<float>(pos.y));
 	point.color = sf::Color::Black;

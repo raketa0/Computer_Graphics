@@ -5,7 +5,7 @@ int main()
 {
     sf::RenderWindow window(sf::VideoMode({ 800, 600 }), "Circle Drawing");
 
-    ConstructionCircle circle(300, sf::Vector2i(400, 300));
+    ConstructionCircle circle(4, sf::Vector2i(400, 300));
 
     while (window.isOpen())
     {

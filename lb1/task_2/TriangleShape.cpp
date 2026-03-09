@@ -37,7 +37,7 @@ bool TriangleShape::IsClick(sf::Vector2f& point)
 	return std::abs(totalArea - (area1 + area2 + area3)) < 1.0f;
 }
 
-float TriangleShape::Area(sf::Vector2f& point1, sf::Vector2f& point2, sf::Vector2f& point3)
+float TriangleShape::Area(sf::Vector2f& point1, sf::Vector2f& point2, sf::Vector2f& point3) //доказательство
 {
 	return std::abs((point1.x * (point2.y - point3.y) + 
 		point2.x * (point3.y - point1.y) + 
