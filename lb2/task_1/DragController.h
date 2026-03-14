@@ -9,8 +9,7 @@ public:
         sf::Sprite& sprite);
 
 private:
-    void ClampToWindow(const sf::RenderWindow& window,
-        sf::Sprite& sprite);
+    void ClampToWindow(const sf::RenderWindow& window, sf::Sprite& sprite);
 
     bool dragging = false;
     sf::Vector2f offset;
