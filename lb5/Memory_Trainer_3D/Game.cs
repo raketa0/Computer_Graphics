@@ -3,8 +3,7 @@ using OpenTK.Graphics;
 using OpenTK.Graphics.OpenGL;
 using OpenTK.Input;
 using System.Drawing;
-using System.Numerics;
-using System.Reflection;
+
 
 public class Game : GameWindow
 {
@@ -17,7 +16,7 @@ public class Game : GameWindow
     bool mousePressed;
 
     public Game(int w, int h)
-        : base(w, h, GraphicsMode.Default, "Memory 3D")
+        : base(w, h, GraphicsMode.Default, "Memory")
     {
     }
 

@@ -29,7 +29,7 @@ public class MousePicker
         return r.Origin + r.Direction * t;
     }
 
-    public Tile Pick(Board b, Vector3 p)
+    public Tile? Pick(Board b, Vector3 p)
     {
         foreach (var t in b.Tiles)
         {

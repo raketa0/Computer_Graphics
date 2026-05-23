@@ -14,6 +14,8 @@ public class Renderer
         {
             frontTex[i] = LoadTex($"Textures/{i}.png");
         }
+        backTex = LoadTex("Textures/back.png");
+
     }
 
     public void Draw(Board b)

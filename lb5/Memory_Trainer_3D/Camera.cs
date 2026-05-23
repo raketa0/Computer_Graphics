@@ -2,11 +2,11 @@
 
 public class Camera
 {
-    public Vector3 Position = new Vector3(6, 8, 12);
+    public Vector3 Position = new Vector3(1.95f, 10, 10f);
 
     public Matrix4 GetView()
     {
-        return Matrix4.LookAt(Position, new Vector3(3, 0, 2), Vector3.UnitY);
+        return Matrix4.LookAt(Position, new Vector3(1.95f, 0, 1.3f), Vector3.UnitY);
     }
 
     public Matrix4 GetProjection(int w, int h)
@@ -15,6 +15,6 @@ public class Camera
             MathHelper.DegreesToRadians(40),
             w / (float)h,
             0.1f,
-            100);
+            70);
     }
 }
